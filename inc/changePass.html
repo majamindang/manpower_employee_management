@@ -1,0 +1,83 @@
+<html><head>
+	<title>Abbots Login</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="./images/abbotslogo.png">
+	<link rel="stylesheet" href="../css/styles.css">
+	
+	<style>
+		.changePass_body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.changePass_right {
+			background: #ffffff;
+			height: 100%;
+			padding: 40px;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.changePass_right h1 {
+			font-size: 1.5rem;
+			margin: 20px 0;
+			text-align: center;
+		}
+		
+		.changePass_right button {
+			width: 100%;
+			height: 30px;
+			background: var(--fg);
+			border: none;
+			color: white;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		
+		.login_wrapper #password::placeholder {
+			font-weight: normal;
+		}
+	</style>
+</head>
+
+<body class="changePass_body">
+
+	<div class="changePass_right">
+		<h1>CHANGE PASSWORD</h1>
+		<div class="login_wrapper">
+			<i class="fas fa-key"></i>
+			<input class="" type="password" placeholder="Old Password" id="password">
+			<i class="far fa-eye"></i>
+		</div>
+		<div class="login_wrapper">
+			<i class="fas fa-key"></i>
+			<input class="" type="password" placeholder="New Password" id="newPass">
+			<i class="far fa-eye"></i>
+		</div>
+		<div class="login_wrapper">
+			<i class="fas fa-key"></i>
+			<input class="" type="password" placeholder="Confirm New Password" id="confPass">
+			<i class="far fa-eye"></i>
+		</div>
+			<button class="submit" id="change_submit">CHANGE</button>
+	</div>
+		
+	<div class="modal2" id="modal2">
+		<div class="messageBox" id="messageBox">
+			<div class="messageIcon">
+				<img src="" id="mIcon">
+			</div>
+			<div class="messageBody">
+				<p class="messageText" id="mText"></p>
+			</div>
+			<div class="messageChoices" id="mChoice">
+			</div>
+		</div>
+	</div>
+	
+
+<script src="../js/changepass.js">
+
+</script>
+</body></html>

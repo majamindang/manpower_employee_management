@@ -1,0 +1,259 @@
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+	
+	:root {
+		--fg: #0099ff;
+		--light: #fff;
+	}
+	
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat', sans-serif;
+	}
+	
+	.box_show_emp {
+		width: 100vw;
+		max-height: 100vh;
+		background: var(--light);
+		border-radius: 5px;
+		padding: 20px;
+	}
+
+	.emp_img {
+		grid-area: emp_img;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		/*! margin-right: 50px; */
+		width: 50%;
+	}
+	
+	.emp_img_frame {
+		background-position: center;
+		background-size: cover;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		box-shadow: 2px 2px 5px 0px #0000006b;
+	}
+	
+	.emp_box1 {
+		grid-area: emp_box1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+	}
+	.emp_box1 h1 {
+		font-size: 1rem;
+		font-weight: bold;
+		padding: 1rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.emp_box1 h1 span {
+		padding-right: 40px;
+	}
+	
+	[class*="emp_box"] table tbody td {
+		padding: 5px 0;
+	}
+	
+	[class*="emp_box"] tr td.key {
+		font-size: 0.8rem;
+		font-weight: bold;
+		padding-right: 25px;
+		width: 150px;
+		text-transform: uppercase;
+	}
+	
+	
+	[class*="emp_box"] tr td.info {
+		font-size: 0.8rem;
+		padding-left: 10px;
+		width: 200px;
+	}
+	
+	[class*="emp_box"] h3 {
+		padding: 1rem 0;
+		color: var(--fg);
+	}
+	
+	[class*="emp_box"] h3 i {
+		margin-right: 10px;
+		color: var(--fg);
+	}
+	
+	.emp_box2 {
+		grid-area: emp_box2;
+		width: 50%;
+		margin-top: 50px;
+	}
+	
+	.emp_box3 {
+		grid-area: emp_box3;
+		margin-top: 50px;
+		width: 50%;
+	}
+
+	button#updatebtn {
+		background: #0099ff;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		color: #ffffff;
+		font-weight: bold;
+		margin-right:10px;
+		margin-top: 20px;
+	}
+
+	button#delbtn {
+		background: #ff2222;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		color: #ffffff;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	
+	.active {
+		width: 120px;
+		font-size: 0.7rem;
+		background: #cbeaff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		padding: 5px 10px;
+		text-transform: uppercase;
+		color: #179acc;
+		font-weight: bold;
+	}
+
+	.terminated {
+		width: 120px;
+		font-size: 0.7rem;
+		background: #fdd2d2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		padding: 5px 10px;
+		text-transform: uppercase;
+		color: #ff0000;
+		font-weight: bold;
+	}
+
+	.resigned {
+		width: 120px;
+		font-size: 0.7rem;
+		background: #f7ffb4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		padding: 5px 10px;
+		text-transform: uppercase;
+		color: #767d00;
+		font-weight: bold;
+	}
+	
+	.box_header {
+		border-bottom: 1px solid var(--fg);
+		height: 3rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	
+	.box_header i {
+		margin-right: 10px;
+		display: none;
+	}
+	
+	.box_header h1 {
+		font-size: 1.2rem;
+		color: var(--fg);
+		position: relative;
+		width: 100%;
+	}
+	
+	.box_header span {
+		position: absolute;
+		right: 0;
+	}
+
+	.box_header span i {
+		font-size: 1.5rem;
+		color: #ff00006b;
+	}
+
+	.box_header span i:hover {
+		color: #ff0000;
+	}
+
+	.box_body {
+		padding: 0 10px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	
+	.personal_info {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 190px));
+        grid-gap: 10px;
+        width: 100%;
+ }
+	
+	.section_title {
+		font-size: 1rem;
+		line-height: 2rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	button#updatebtn {
+		background: #0099ff;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		color: #ffffff;
+		font-weight: bold;
+		margin-right:10px;
+		margin-top: 20px;
+		font-size: 0.8rem;
+		cursor: pointer;
+	}
+
+	button#delbtn {
+		background: #ff2222;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		color: #ffffff;
+		font-weight: bold;
+		margin-top: 20px;
+		font-size: 0.8rem;
+		cursor: pointer;
+	}
+	
+	button#printbtn {
+		background: #000000;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		color: #ffffff;
+		font-weight: bold;
+		margin-top: 20px;
+		margin-right: 10px;
+		font-size: 0.8rem;
+		cursor: pointer;
+	}
+	
